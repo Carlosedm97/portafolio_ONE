@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #FAFAFA;
+    --secondary-color: #9D21BF;
+    --tertiary--color: #72118C;
+    --bg-color-primary: #091746;
+    --bg-color-secondary: #0D2459;
+    --text: #F5F5F5;
+
+    --font: 'Raleway', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}

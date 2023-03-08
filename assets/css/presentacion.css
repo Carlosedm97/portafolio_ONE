@@ -1,0 +1,66 @@
+.presentacion__container {
+    background: var(--bg-color-primary);
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentacion__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.presentacion__texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.presentacion__info__texto {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.presentacion__info__titulo {
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.presentacion__buttons{
+    display: flex;
+    gap: 40px;
+}
+
+.btn {
+    color: var(--text);
+    background-color: var(--secondary-color);
+    width: 130px;
+    height: 44px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 1s all;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.presentacion__imagen {
+    width: 268px;
+    height: 268px;
+    background-image: url('../../assets/img/perfil-de-usuario.png');
+    background-size: contain;
+    border-radius: 100%;
+    border: 6px solid var(--secondary-color);
+}

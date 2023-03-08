@@ -1,0 +1,45 @@
+.skills__container {
+    background: var(--bg-color-primary);
+    font-family: var(--font);
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills__titulo {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills__tarjeta {
+    width: 176px;
+    height: 174px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.skills__icon {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    line-height: 1;
+    padding-bottom: 8px;
+    padding-left: 16px;
+}
+
+.skills__nombre {
+    padding-bottom: 16px;
+    padding-left: 16px;
+}

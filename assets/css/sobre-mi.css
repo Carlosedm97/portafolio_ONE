@@ -1,0 +1,21 @@
+.sobre-mi__container {
+    background: var(--bg-color-secondary);
+    font-family: var(--font);
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-mi__titulo {
+    font-size: 2.5rem;
+}
+
+.sobre-mi__parrafo {
+    display: flex;
+    font-size: 1.2rem;
+    word-spacing: 3px;
+}
