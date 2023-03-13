@@ -5,8 +5,12 @@
     --bg-color-primary: #091746;
     --bg-color-secondary: #0D2459;
     --text: #F5F5F5;
+    --warning-color: #df2525;
 
     --font: 'Raleway', sans-serif;
+    --title-size: 2rem;
+
+    --padding-l-r: 0 8% 0 8%
 }
 
 html{

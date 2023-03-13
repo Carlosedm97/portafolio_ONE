@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/skills.css">
     <link rel="stylesheet" href="assets/css/hobbies.css">
     <link rel="stylesheet" href="assets/css/experiencia.css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
                                 class="header__navegacion__link">Formacion</a></a></li>
                         <li class="header__navegacion__item"><a href="#proyectos" class="header__navegacion__link">Proyectos</a>
                         </li>
-                        <li class="header__navegacion__item"><a href="" class="header__navegacion__link">Contacto</a>
+                        <li class="header__navegacion__item"><a href="#contacto" class="header__navegacion__link">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -72,21 +73,7 @@
         </section>
         <section class="sobre-mi__container" id="sobre-mi">
             <h2 class="sobre-mi__titulo">Sobre mi</h2>
-            <p class="sobre-mi__parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam impedit
-                obcaecati cum similique sit quibusdam a nesciunt dolore maxime aspernatur velit, accusamus quas libero
-                labore omnis laboriosam voluptate alias. Eius.
-                Modi vel aliquam soluta reiciendis odit ullam pariatur optio magnam in exercitationem hic explicabo
-                excepturi ipsum rerum culpa beatae iste, dolorem, earum minima nemo assumenda? Repellendus libero
-                voluptatum consequuntur accusamus!
-                Dolorem obcaecati, recusandae iure alias sed, esse facere provident molestias nesciunt soluta
-                consequuntur, nobis iusto nam corporis illo aspernatur! Quas in perferendis autem, sint laboriosam quo
-                doloribus aut tempora. Officia.
-                Repellendus eius, officia, tempora quas quae iste fuga esse neque ab quo quasi, nulla similique
-                possimus? Ducimus optio quo ullam sapiente reprehenderit esse minus, asperiores quod perspiciatis
-                officiis vero ut!
-                Pariatur doloremque eos et. Sed enim dolore dolores alias, nostrum ut sit rem ullam vero adipisci esse,
-                aliquid praesentium error deleniti eaque non, reiciendis consectetur repellendus. Expedita excepturi
-                provident ullam.</p>
+            <p class="sobre-mi__parrafo">Desarrollador web, egresado del programa Misión TIC 2022 en la Universidad Nacional de Colombia. Actualmente me encuentro cursando el programa Oracle Next Education en la ruta Frontend. Tengo conocimiento en tecnologías como HTML5, CSS3, Javascript y el software de control de versiones Git. Adicionalmente, me he desempeñado en el sector salud como auxiliar de enfermería en un centro de bienestar para adultos mayores. En cuanto a mis habilidades blandas, las que he venido trabajando y aplicando son: la organización, el trabajo colaborativo, la empatía, gestión efectiva del tiempo, capacidad de respuesta, entre otras.</p>
         </section>
         <section class="skills__container" id="skills">
             <h2 class="skills__titulo">Skills</h2>
@@ -135,31 +122,50 @@
             </div>
         </section>
         <section class="experiencia__container" id="proyectos">
-            <h2 class="experiencia__titulo">Experiencia Profesional</h2>
-            <div class="proyectos">
-                <div class="proyecto__tarjeta proyecto__tarjeta--encriptador">
+            <h2 class="proyectos__titulo">Proyectos</h2>
+            <div class="proyectos__container">
+                <div class="proyectos__tarjeta">
+                    <div class="tarjeta__imagen"></div>
                     <div class="tarjeta__info">
-                        <h3 class="tarjeta__titulo">Encriptador de Texto</h3>
-                        <p class="tarjeta__descripcion">Challenge número uno de ONE.</p>
+                        <h3 class="tarjeta__titulo">Encriptador de texto</h3>
+                        <p class="tarjeta__descripcion">Reto número 1 de la formación principiante en programación.</p>
                         <div class="tarjeta__buttons">
-                            <a class="buttons__enlace" href="https://github.com/Carlosedm97/encriptador_de_texto_ONE" target="_blank" rel="noopener">Ver código</a>
                             <a class="buttons__enlace" href="https://carlosedm97.github.io/encriptador_de_texto_ONE/" target="_blank" rel="noopener">Ver demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyecto__tarjeta proyecto__tarjeta--quizgame">
-                    <div class="tarjeta__info">
-                        <h3 class="tarjeta__titulo">Juego de capitales "Quiz Game"</h3>
-                        <p class="tarjeta__descripcion">Proyecto personal realizado como práctica.</p>
-                        <div class="tarjeta__buttons">
-                            <a class="buttons__enlace" href="https://github.com/Carlosedm97/quiz_game" target="_blank" rel="noopener">Ver código</a>
-                            <a class="buttons__enlace" href="https://carlosedm97.github.io/quiz_game/" target="_blank" rel="noopener">Ver demo</a>
+                            <a class="buttons__enlace" href="https://github.com/Carlosedm97/encriptador_de_texto_ONE" target="_blank" rel="noopener">Ver código</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="contacto__container" id="contacto">
+            <div class="formulario__container">
+                <h2 class="contacto__titulo">Contacto</h2>
+                <form action="" class="contacto__formulario">
+                    <div class="input__container">
+                        <label for="nombre" class="contacto__formulario--label">Nombre</label><br>
+                        <input type="text" class="contacto__formulario--input" id="nombre" required data-tipo="nombre"><br>
+                        <span class="contacto__formulario--message"></span><br>
+                    </div>
+                    <div class="input__container">
+                        <label for="correo" class="contacto__formulario--label">Correo</label><br>
+                        <input type="email" class="contacto__formulario--input" id="correo" required data-tipo="correo"><br>
+                        <span class="contacto__formulario--message"></span><br>
+                    </div>
+                    <div class="input__container">
+                        <label for="asunto" class="contacto__formulario--label">Asunto</label><br>
+                        <input type="text" class="contacto__formulario--input" id="asunto" required pattern="[\s\S]{10,60}" data-tipo="asunto"><br>
+                        <span class="contacto__formulario--message"></span><br>
+                    </div>
+                    <div class="input__container ">
+                        <label for="mensaje" class="contacto__formulario--label">Mensaje</label><br>
+                        <textarea name="" id="mensaje" cols="30" rows="5" class="contacto__formulario--input" required data-tipo="mensaje"></textarea>
+                        <span class="contacto__formulario--message"></span><br>
+                    </div>
+                    <input type="submit" class="contacto__formulario--btn">
+                </form>
+            </div>
+        </section>
     </main>
+    <script src="js/validation.js"></script>
 </body>
-
 </html>

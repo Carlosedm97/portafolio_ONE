@@ -2,8 +2,7 @@
     background: var(--bg-color-secondary);
     font-family: var(--font);
     height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: var(--padding-l-r);
     color: var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -11,7 +10,7 @@
 }
 
 .sobre-mi__titulo {
-    font-size: 2.5rem;
+    font-size: var(--title-size)
 }
 
 .sobre-mi__parrafo {

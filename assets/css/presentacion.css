@@ -1,8 +1,8 @@
 .presentacion__container {
     background: var(--bg-color-primary);
-    padding-left: 8%;
-    padding-right: 8%;
+    font-family: var(--font);
     height: 100vh;
+    padding: var(--padding-l-r);
     display: flex;
     align-items: center;
     justify-content: space-between;

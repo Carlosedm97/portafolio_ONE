@@ -1,0 +1,82 @@
+.contacto__container {
+    background-image: url('../img/bg.webp');
+    height: 100vh;
+    background-size: cover;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    color: var(--text);
+}
+
+.formulario__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color-primary);
+    width: 480px;
+    padding: 30px 40px;
+    border-radius: 15px;
+}
+
+.contacto__formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__fomulario--label {
+    font-size: 1.2rem;
+}
+
+.contacto__formulario--input {
+    background: var(--bg-color-secondary);
+    color: var(--text);
+    border: none;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contacto__formulario--btn {
+    padding: 12px;
+    background: var(--secondary-color);
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario__input--invalid {
+    border: 2px solid var(--warning-color);
+    animation: fadein 0.5s;
+    -moz-animation: fadein 0.5s;
+    -webkit-animation: fadein 0.5s;
+    -o-animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.contacto__formulario--message {
+    color: var(--warning-color);
+    animation: fadein 0.5s;
+}
+

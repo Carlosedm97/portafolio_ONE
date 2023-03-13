@@ -1,17 +1,16 @@
 .header__container {
     background: var(--bg-color-primary);
-    font-family: var(--font);
     width: 100%;
+    font-family: var(--font);
     border-bottom: 4px solid var(--secondary-color);
     position: fixed;
 }
 
 .header {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 
 .header__logo {
