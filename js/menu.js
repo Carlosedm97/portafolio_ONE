@@ -9,3 +9,11 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
+
+const menuItems = document.querySelectorAll('nav a');
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        nav.classList.remove('visible');
+    });
+});
