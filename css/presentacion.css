@@ -3,8 +3,9 @@
     padding: var(--padding-left-right);
     height: 100vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+    gap: 200px;
 }
 
 .presentacion__info {
@@ -84,6 +85,12 @@
     .button {
         padding: 10px;
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .presentacion__container {
+        gap: 20px
     }
 }
 
