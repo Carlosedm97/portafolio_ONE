@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #FAFAFA;
+    --secondary-color: #9D21BF;
+    --tertiary--color: #72118C;
+    --bg-color-primary: #091746;
+    --bg-color-secondary: #0D2459;
+    --warning-color: #df2525;
+
+    --padding-left-right: 0 5% 0 5%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}

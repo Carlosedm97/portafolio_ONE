@@ -1,0 +1,94 @@
+.presentacion__container {
+    background: var(--bg-color-secondary);
+    padding: var(--padding-left-right);
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.presentacion__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.presentacion__textos {
+    color: var(--primary-color);
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textos__parrafo {
+    margin: 0;
+}
+
+.textos__titulo {
+    color: var(--secondary-color);
+}
+
+.presentacion__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 1s all;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.presentacion__imagen {
+    width: 270px;
+    height: 270px;
+    background-image: url('../img/perfil-de-usuario.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    border: 4px solid var(--secondary-color);
+}
+
+@media screen and (max-width:1024px) {
+    .presentacion__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentacion__imagen {
+        order: -1;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .presentacion__textos {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .button {
+        font-size: 0.8rem;
+    }
+}
