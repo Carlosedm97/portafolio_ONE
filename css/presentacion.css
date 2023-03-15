@@ -77,13 +77,23 @@
 }
 
 @media screen and (max-width:768px) {
+    .presentacion__container {
+        justify-content: center;
+        gap: 80px;
+    }
+
     .presentacion__textos {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .button {
         padding: 10px;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        transition: none;
+    }
+    
+    .button:hover {
+        transform: none;
     }
 }
 
@@ -91,6 +101,11 @@
     .presentacion__container {
         justify-content: center;
         gap: 80px;
+    }
+
+    .button {
+        font-size: 1rem;
+        transition: none;
     }
 }
 

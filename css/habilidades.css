@@ -1,0 +1,77 @@
+.habilidades__container {
+    background: var(--bg-color-secondary);
+    height: 100vh;
+    padding: var(--padding-left-right);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades__titulo {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.habilidades {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.habilidades__tarjeta {
+    background: var(--primary-color);
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.tarjeta__icon {
+    font-size: 2rem;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    color: var(--secondary-color);
+}
+
+.tarjeta__nombre {
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    .habilidades__tarjeta {
+        flex-basis: 29%;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .habilidades__tarjeta {
+        flex-basis: 29%;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .habilidades__titulo {
+        font-size: 1.25rem;
+    }
+
+    .habilidades__tarjeta {
+        flex-basis: 29%;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .habilidades__tarjeta {
+        flex-basis: 29%;
+        flex-grow: 1;
+    }
+}

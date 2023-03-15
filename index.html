@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/presentacion.css">
+  <link rel="stylesheet" href="css/sobre-mi.css">
+  <link rel="stylesheet" href="css/habilidades.css">
   <title>CLDev.</title>
 </head>
 
@@ -26,7 +28,7 @@
     <nav class="header__nav" id="nav">
       <button class="header__menu--cerrar" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
       <ul class="nav__list">
-        <li class="list__item"><a href="" class="item__anchor">Sobre mi</a></li>
+        <li class="list__item"><a href="#sobre-mi" class="item__anchor">Sobre mi</a></li>
         <li class="list__item"><a href="" class="item__anchor">Hábilidades</a></li>
         <li class="list__item"><a href="" class="item__anchor">Proyectos</a></li>
         <li class="list__item"><a href="" class="item__anchor">Contacto</a></li>
@@ -37,7 +39,7 @@
     <section class="presentacion__container">
       <div class="presentacion__info">
         <div class="presentacion__textos">
-          <p class="textos__parrafo">Hola, me llamo Carlos y soy</p>
+          <p class="textos__parrafo">Hola, me llamo Carlos, soy</p>
           <h2 class="textos__titulo">Desarrollador Web</h2>
           <p class="textos__parrafo">y estudiante Frontend en Alura Latam.</p>
         </div>
@@ -48,6 +50,39 @@
         </div>
       </div>
       <div class="presentacion__imagen"></div>
+    </section>
+    <section class="sobre-mi__container" id="sobre-mi">
+      <h2 class="sobre-mi__titulo"><span class="code-simbol">< </span>Sobre mi<span class="code-simbol"> ></span></h2>
+      <p class="sobre-mi__parrafo">Desarrollador web, egresado del programa Misión TIC 2022 en la Universidad Nacional de Colombia. Actualmente me encuentro cursando el programa Oracle Next Education en la ruta Frontend. Tengo conocimiento en tecnologías como HTML5, CSS3, Javascript y el software de control de versiones Git. Adicionalmente, me he desempeñado en el sector salud como auxiliar de enfermería en un centro de bienestar para adultos mayores. En cuanto a mis habilidades blandas, las que he venido trabajando y aplicando son: la organización, el trabajo colaborativo, la empatía, gestión efectiva del tiempo, capacidad de respuesta, entre otras.</p>
+    </section>
+    <section class="habilidades__container">
+      <h2 class="habilidades__titulo"><span class="code-simbol">< </span>Hábilidades<span class="code-simbol"> ></span></h2>
+      <div class="habilidades">
+        <div class="habilidades__tarjeta">
+          <i class="fa-brands fa-html5 tarjeta__icon"></i>
+          <h3 class="tarjeta__nombre">Html5</h3>
+        </div>
+        <div class="habilidades__tarjeta">
+          <i class="fa-brands fa-css3-alt tarjeta__icon"></i>
+          <h3 class="tarjeta__nombre">CSS3</h3>
+        </div>
+        <div class="habilidades__tarjeta">
+          <i class="fa-brands fa-js tarjeta__icon"></i>
+          <h3 class="tarjeta__nombre">Javascript</h3>
+        </div>
+        <div class="habilidades__tarjeta">
+          <i class="fa-brands fa-react tarjeta__icon"></i>
+          <h3 class="tarjeta__nombre">React</h3>
+        </div>
+        <div class="habilidades__tarjeta">
+          <i class="fa-brands fa-node-js tarjeta__icon"></i>
+          <h3 class="tarjeta__nombre">Node JS</h3>
+        </div>
+        <div class="habilidades__tarjeta">
+          <i class="fa-brands fa-git-alt tarjeta__icon"></i>
+          <h3 class="tarjeta__nombre">Git</h3>
+        </div>
+      </div>
     </section>
   </main>
   <script src="js/menu.js" ></script>
