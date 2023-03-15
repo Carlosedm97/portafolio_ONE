@@ -88,7 +88,10 @@
 }
 
 @media screen and (max-width:425px) {
-    
+    .presentacion__container {
+        justify-content: center;
+        gap: 150px;
+    }
 }
 
 @media screen and (max-width:375px) {
