@@ -90,7 +90,7 @@
 
 @media screen and (max-width:425px) {
     .presentacion__container {
-        gap: 50px
+        justify-content: space-around;
     }
 }
 
