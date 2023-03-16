@@ -1,0 +1,89 @@
+.formacion__container {
+    background: var(--bg-color-primary);
+    height: 100vh;
+    padding: var(--padding-left-right);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacion__titulo {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.formacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 0;
+}
+
+.formacion__tarjeta {
+    background-color: red;
+    width: 25.05vw;
+    height: 26.51vw;
+    color: var(--primary-color);
+}
+
+.formacion__imagen {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen--udemy {
+    background-image: url('../img/udemy.webp');
+    width: 18.89vw;
+    height: 7.1vw;
+}
+
+.imagen--unal {
+    background-image: url('../img/universidad-nacional-de-colombia.webp');
+    width: 21.17vw;
+    height: 9.41vw;
+}
+
+.imagen--alura {
+    background-image: url('../img/alura.webp');
+    width: 14.70vw;
+    height: 10vw;
+}
+
+.formacion__nombre {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+.formacion__info {
+    margin: 10px 0 0 0;
+}
+
+@media screen and (max-width: 425px) {
+    .formacion__titulo {
+        font-size: 1.25rem;
+    }
+
+    .formacion {
+        flex-direction: column;
+        align-items: center;
+        gap:112px;
+    }
+
+    .formacion__tarjeta {
+        width: 100%;
+    }
+}
