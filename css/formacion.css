@@ -86,4 +86,19 @@
     .formacion__tarjeta {
         width: 100%;
     }
+
+    .imagen--udemy {
+        width:  37.6vw;
+        height: 14.1vw;
+    }
+
+    .imagen--unal {
+        width: 42.3vw;
+        height: 18.8vw;
+    }
+
+    .imagen--alura {
+        width: 29.4vw;
+        height: 20vw;
+    }
 }
