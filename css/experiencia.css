@@ -1,0 +1,113 @@
+.experiencia__container {
+    background: var(--bg-color-secondary);
+    height: 100vh;
+    padding: var(--padding-left-right);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.experiencia__titulo {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0 20px 0;
+}
+
+.proyecto__tarjeta {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.proyecto__imagen {
+    width: 450px;
+    height: 225px;
+}
+
+.proyecto__imagen--quizgame {
+    order: 1;
+}
+
+.proyecto__info {
+    color: var(--primary-color);
+    padding: var(--padding-left-right);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.proyecto__titulo {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.proyecto__descripcion {
+    margin: 0;
+}
+
+.proyecto__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 30px;
+}
+
+.boton__demo,
+.boton__codigo {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.boton__demo {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+}
+
+.boton__codigo {
+    padding: 10px;
+    background: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .experiencia__container {
+        height: auto;
+    }
+
+    .proyecto__tarjeta {
+        flex-direction: column;
+    }
+
+    .proyecto__imagen {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .proyecto__imagen--quizgame {
+        order: -1;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .experiencia__titulo {
+        font-size: 1.25rem;
+    }
+
+    .proyecto__imagen {
+        width: 100%;
+        height: 30vh;
+    }
+}
