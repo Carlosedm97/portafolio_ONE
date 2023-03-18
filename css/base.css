@@ -17,6 +17,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+footer {
+    box-sizing: border-box;
+}
+
 .code-simbol {
     color: var(--secondary-color);
 }
