@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/habilidades.css">
   <link rel="stylesheet" href="css/formacion.css">
   <link rel="stylesheet" href="css/experiencia.css">
+  <link rel="stylesheet" href="css/contacto.css">
   <title>CLDev.</title>
 </head>
 
@@ -33,8 +34,8 @@
         <li class="list__item"><a href="#sobre-mi" class="item__anchor visible">Sobre mi</a></li>
         <li class="list__item"><a href="#habilidades" class="item__anchor visible">Hábilidades</a></li>
         <li class="list__item"><a href="#formacion" class="item__anchor visible">Formación</a></li>
-        <li class="list__item"><a href="" class="item__anchor visible">Proyectos</a></li>
-        <li class="list__item"><a href="" class="item__anchor visible">Contacto</a></li>
+        <li class="list__item"><a href="#experiencia" class="item__anchor visible">Proyectos</a></li>
+        <li class="list__item"><a href="#contacto" class="item__anchor visible">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -113,7 +114,7 @@
         </div>
       </div>
     </section>
-    <section class="experiencia__container">
+    <section class="experiencia__container" id="experiencia">
       <h2 class="experiencia__titulo"><span class="code-simbol">< </span>Proyectos<span class="code-simbol"> ></span></h2>
       <div class="proyectos">
         <div class="proyecto__tarjeta">
@@ -150,7 +151,7 @@
           </div>
         </div>
         <div class="proyecto__tarjeta">
-          <img class="proyecto__imagen" src="img/apeperia.png" alt="imagen del proyecto de apeperia">
+          <img class="proyecto__imagen proyecto__imagen--quizgame" src="img/apeperia.png" alt="imagen del proyecto de apeperia">
           <div class="proyecto__info">
             <p class="proyecto__titulo">Apeperia</p>
             <p class="proyecto__descripcion">Página realizada para una empresa de creación de software.</p>
@@ -162,9 +163,35 @@
         </div>
       </div>
     </section>
+    <section class="contacto__container" id="contacto">
+      <h2 class="contacto__titulo"><span class="code-simbol">< </span>Contacto<span class="code-simbol"> ></span></h2>
+      <form class="contacto__form form">
+        <div class="form__container">
+          <div class="input__container">
+            <input type="text" class="form__input" placeholder="Nombre" name="nombre" required data-tipo="nombre">
+            <span class="form__message--invalid"></span>
+          </div>
+          <div class="input__container">
+            <input type="email" class="form__input" placeholder="Email" name="correo" required data-tipo="correo">
+            <span class="form__message--invalid"></span>
+          </div>
+          <div class="input__container">
+            <input type="text" class="form__input" placeholder="Asunto" name="asunto" required data-tipo="asunto" pattern="[\s\S]{10,60}">
+            <span class="form__message--invalid"></span>
+          </div>
+          <div class="input__container">
+            <textarea class="form__input form__input--message" placeholder="Mensaje" name="mensaje" required data-tipo="mensaje"></textarea>
+          </div>
+          
+          <input type="submit" value="Enviar" class="form__btn">
+          <a class="mailto" href="mailto:carlosedm97@gmail.com">mail</a>
+        </div>
+      </form>
+    </section>
   </main>
   <script src="js/menu.js" ></script>
-  <script src="js/carrusel.js"></script>
+  <script src="js/formValidation.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>

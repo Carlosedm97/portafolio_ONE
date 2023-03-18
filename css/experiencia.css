@@ -1,6 +1,6 @@
 .experiencia__container {
     background: var(--bg-color-secondary);
-    height: 100vh;
+    height: auto;
     padding: var(--padding-left-right);
     display: flex;
     flex-direction: column;
